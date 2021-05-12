@@ -1,11 +1,14 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/Layout/layout'
 import styles from '../styles/Home.module.css'
+import Router from 'next/router'
 
 export default function Home() {
-  return (
-    <div className={styles.container}>
-      <Head>
+  Router.push('/dashboard')
+  // return (
+  //   <div className={styles.container}>
+
+      {/* <Head>
         <title>Go1 Integration Project</title>
         <meta name="description" content="I am learning how to create an integration for the Go1 platform." />
         <link rel="icon" href="/favicon.ico" />
@@ -60,7 +63,7 @@ export default function Home() {
         >
         Created by Joy Taylor
         </a>
-      </footer>
-    </div>
-  )
+      </footer> */}
+    // </div>
+  // )
 }
